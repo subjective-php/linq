@@ -1,5 +1,5 @@
 {
-    "name": "subjective-php/skeleton",
+    "name": "subjective-php/linq",
     "description": "Library contains classes that follow the LINQ pattern and enable you to express traversal, filter, and projection operations over data",
     "license": "MIT",
     "config" : {
