@@ -1,0 +1,26 @@
+{
+    "name": "subjective-php/skeleton",
+    "description": "Library contains classes that follow the LINQ pattern and enable you to express traversal, filter, and projection operations over data",
+    "license": "MIT",
+    "config" : {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "chadicus/coding-standard": "^1.7",
+        "phpunit/phpunit": "^6.5",
+        "php-coveralls/php-coveralls": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SubjectivePHP\\Linq\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SubjectivePHPTest\\Linq\\": "tests"
+        }
+    }
+}
