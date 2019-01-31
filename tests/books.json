@@ -1,0 +1,101 @@
+[
+    {
+        "author": "Gambardella, Matthew",
+        "title": "XML Developer's Guide",
+        "genre": "Computer",
+        "price": 44.95,
+        "published": 970372800,
+        "description": "An in-depth look at creating applications with XML.",
+        "id": "58339e95d5200"
+    },
+    {
+        "author": "Ralls, Kim",
+        "title": "Midnight Rain",
+        "genre": "Fantasy",
+        "price": 5.95,
+        "published": 976942800,
+        "description": "A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world.",
+        "id": "58339e95d5239"
+    },
+    {
+        "author": "Corets, Eva",
+        "title": "Maeve Ascendant",
+        "genre": "Fantasy",
+        "price": 5.95,
+        "published": 974437200,
+        "description": "After the collapse of a nanotechnology society in England, the young survivors lay the foundation for a new society.",
+        "id": "58339e95d526f"
+    },
+    {
+        "author": "Corets, Eva",
+        "title": "Oberon's Legacy",
+        "genre": "Fantasy",
+        "price": 5.95,
+        "published": 984200400,
+        "description": "In post-apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendant.",
+        "id": "58339e95d52a4"
+    },
+    {
+        "author": "Corets, Eva",
+        "title": "The Sundered Grail",
+        "genre": "Fantasy",
+        "price": 5.95,
+        "published": 1000094400,
+        "description": "The two daughters of Maeve, half-sisters, battle one another for control of England. Sequel to Oberon's Legacy.",
+        "id": "58339e95d52d9"
+    },
+    {
+        "author": "Randall, Cynthia",
+        "title": "Lover Birds",
+        "genre": "Romance",
+        "price": 4.95,
+        "published": 967867200,
+        "description": "When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled.",
+        "id": "58339e95d530e"
+    },
+    {
+        "author": "Thurman, Paula",
+        "title": "Splish Splash",
+        "genre": "Romance",
+        "price": 4.95,
+        "published": 973141200,
+        "description": "A deep sea diver finds true love twenty thousand leagues beneath the sea.",
+        "id": "58339e95d5343"
+    },
+    {
+        "author": "Knorr, Stefan",
+        "title": "Creepy Crawlies",
+        "genre": "Horror",
+        "price": 4.95,
+        "published": 976078800,
+        "description": "An anthology of horror stories about roaches, centipedes, scorpions  and other insects.",
+        "id": "58339e95d5378"
+    },
+    {
+        "author": "Kress, Peter",
+        "title": "Paradox Lost",
+        "genre": "Science Fiction",
+        "price": 6.95,
+        "published": 973141200,
+        "description": "After an inadvertant trip through a Heisenberg Uncertainty Device, James Salway discovers the problems of being quantum.",
+        "id": "58339e95d53ae"
+    },
+    {
+        "author": "O'Brien, Tim",
+        "title": "Microsoft .NET: The Programming Bible",
+        "genre": "Computer",
+        "price": 36.95,
+        "published": 976338000,
+        "description": "Microsoft's .NET initiative is explored in detail in this deep programmer's reference.",
+        "id": "58339e95d53e4"
+    },
+    {
+        "author": "O'Brien, Tim",
+        "title": "MSXML3: A Comprehensive Guide",
+        "genre": "Computer",
+        "price": 36.95,
+        "published": 975646800,
+        "description": "The Microsoft MSXML3 parser is covered in detail, with attention to XML DOM interfaces, XSLT processing, SAX and more.",
+        "id": "58339e95d5419"
+    }
+]
