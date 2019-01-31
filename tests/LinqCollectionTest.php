@@ -10,6 +10,7 @@ use SubjectivePHP\Linq\LinqCollection;
 /**
  * @coversDefaultClass \SubjectivePHP\Linq\LinqCollection
  * @covers ::__construct
+ * @covers ::getIterator
  * @covers ::<private>
  */
 final class LinqCollectionTest extends TestCase
@@ -69,6 +70,55 @@ final class LinqCollectionTest extends TestCase
     {
         $collection = LinqCollection::from([]);
         $collection->first();
+    }
+
+    /**
+     * @test
+     * @covers ::first
+     */
+    public function firstReturnsFirstElement()
+    {
+        $first = $this->collection->first();
+        $this->assertSame('58339e95d5200', $first->id);
+    }
+
+    /**
+     * @test
+     * @covers ::firstOrDefault
+     */
+    public function firstReturnsDefaultIfEmpty()
+    {
+        $default = new \StdClass();
+        $callable = function ($element) {
+            return false;
+        };
+        $this->assertSame($default, $this->collection->firstOrDefault($callable, $default));
+    }
+
+    /**
+     * @test
+     * @covers ::count
+     */
+    public function countReturnsCountOfElementsInSequence()
+    {
+        $this->assertSame(11, $this->collection->count());
+    }
+
+    /**
+     * @test
+     * @covers ::orderBy
+     */
+    public function orderByOrdersSequence()
+    {
+        $collection = LinqCollection::from(['z', 'g', 'a', 'n']);
+        $callable = function ($a, $b) {
+            return strcmp($a, $b);
+        };
+
+        $this->assertSame(
+            [2 => 'a', 1 => 'g', 3 => 'n', 0 => 'z'],
+            iterator_to_array($collection->orderBy($callable))
+        );
     }
 
     /**
