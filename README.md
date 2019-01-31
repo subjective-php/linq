@@ -13,7 +13,7 @@ Library contains classes that follow the LINQ pattern and enable you to express 
 [![Daily Downloads](https://poser.pugx.org/subjective-php/linq/d/daily)](https://packagist.org/packages/subjective-php/linq)
 [![Monthly Downloads](https://poser.pugx.org/subjective-php/linq/d/monthly)](https://packagist.org/packages/subjective-php/linq)
 
-[![Documentation](https://img.shields.io/badge/reference-phpdoc-blue.svg?style=flat)](http://pholiophp.org/subjective-php/linq)
+[![Documentation](https://img.shields.io/badge/reference-phpdoc-blue.svg?style=flat)](http://www.pholiophp.org/subjective-php/linq)
 
 Utilities to assist with [PSR-16 SimpleCache](http://www.php-fig.org/psr/psr-16/) implementations.
 
