@@ -149,6 +149,50 @@ final class LinqCollectionTest extends TestCase
 
     /**
      * @test
+     */
+    public function chainSkipTakeAndCount()
+    {
+        $this->assertSame(1, $this->collection->skip(3)->take(1)->count());
+    }
+
+    /**
+     * @test
+     */
+    public function largeChain()
+    {
+        $actual = $this->collection->where(
+            function (StdClass $book) : bool {
+                return $book->genre === 'Computer';
+            }
+        )->select(
+            function (StdClass $book) : array {
+                return [
+                    'id' => $book->id,
+                    'title' => $book->title,
+                    'salePrice' => round($book->price * 0.90, 2),
+                ];
+            }
+        )->orderBy(
+            function (array $thisBook, array $thatBook) : int {
+                if ($thisBook['salePrice'] === $thatBook['salePrice']) {
+                    return 0;
+                }
+
+                return ($thisBook['salePrice'] > $thatBook['salePrice']) ? 1 : -1;
+            }
+        )->skip(2)->take(1)->first();
+
+        $expected = [
+            'id' => '58339e95d5200',
+            'title' => "XML Developer's Guide",
+             'salePrice' => 40.46,
+        ];
+
+        $this->assertSame($actual, $expected);
+    }
+
+    /**
+     * @test
      * @covers ::where
      */
     public function whereFilters()
