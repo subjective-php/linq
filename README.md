@@ -1,5 +1,4 @@
 # linq
-Library contains classes that follow the LINQ pattern and enable you to express traversal, filter, and projection operations over data
 
 [![Build Status](https://travis-ci.org/subjective-php/linq.svg?branch=master)](https://travis-ci.org/subjective-php/linq)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/subjective-php/linq/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/subjective-php/linq/?branch=master)
@@ -15,7 +14,7 @@ Library contains classes that follow the LINQ pattern and enable you to express 
 
 [![Documentation](https://img.shields.io/badge/reference-phpdoc-blue.svg?style=flat)](http://www.pholiophp.org/subjective-php/linq)
 
-Utilities to assist with [PSR-16 SimpleCache](http://www.php-fig.org/psr/psr-16/) implementations.
+Library contains classes that follow the LINQ pattern and enable you to express traversal, filter, and projection operations over data
 
 ## Requirements
 
