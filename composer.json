@@ -9,9 +9,10 @@
         "php": "^7.0"
     },
     "require-dev": {
+        "ext-json": "*",
         "chadicus/coding-standard": "^1.7",
-        "phpunit/phpunit": "^6.5",
-        "php-coveralls/php-coveralls": "^2.0"
+        "php-coveralls/php-coveralls": "^2.0",
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
