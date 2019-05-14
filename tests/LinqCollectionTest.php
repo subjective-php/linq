@@ -97,6 +97,16 @@ final class LinqCollectionTest extends TestCase
 
     /**
      * @test
+     * @covers ::firstOrDefault
+     */
+    public function firstOrDefaultDoesNotRequireParameters()
+    {
+        $collection = LinqCollection::from([]);
+        $this->assertNull($collection->firstOrDefault());
+    }
+
+    /**
+     * @test
      * @covers ::count
      */
     public function countReturnsCountOfElementsInSequence()
